@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_DbGrid_Double</class>
+ <widget class="QWidget" name="frm_DbGrid_Double">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>704</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Double Grid-Model manager</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="btnHeaderLoad">
+     <property name="text">
+      <string>Header load</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="txtModelMain"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLineEdit" name="txtJsonMain"/>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLineEdit" name="txtModelSub"/>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLineEdit" name="txtJsonSub"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="btnDataLoad">
+     <property name="text">
+      <string>Data load</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" rowspan="12" colspan="4">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="HQ_Base_Db_Grid" name="oGridMain"/>
+     <widget class="HQ_Base_Db_Grid" name="oGridSub"/>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="btnFillModel">
+     <property name="text">
+      <string>FillModel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="btnClearContents">
+     <property name="text">
+      <string>clear contents</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="btnClear">
+     <property name="text">
+      <string>clear all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="btnGetHeader">
+     <property name="text">
+      <string>get header</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="btnGetData">
+     <property name="text">
+      <string>get data</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="btnGetModified">
+     <property name="text">
+      <string>get modified</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QPushButton" name="btnInsert">
+     <property name="text">
+      <string>insert</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QPushButton" name="btnAdd">
+     <property name="text">
+      <string>add</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QPushButton" name="btnModelCopy">
+     <property name="text">
+      <string>model copy</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QPushButton" name="btnSave">
+     <property name="text">
+      <string>save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>61</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>HQ_Base_Db_Grid</class>
+   <extends>QTableWidget</extends>
+   <header>hq_base_db_grid.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

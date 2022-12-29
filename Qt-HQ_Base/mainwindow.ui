@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>627</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File(F)</string>
+    </property>
+    <addaction name="aExit"/>
+   </widget>
+   <widget class="QMenu" name="menuDB">
+    <property name="title">
+     <string>&amp;Database(D)</string>
+    </property>
+    <addaction name="aGridsingle"/>
+    <addaction name="aGriddouble"/>
+    <addaction name="aPage"/>
+   </widget>
+   <widget class="QMenu" name="menuModbus">
+    <property name="title">
+     <string>&amp;Modbus(M)</string>
+    </property>
+    <addaction name="aModbusFuncCode"/>
+    <addaction name="aModbusPackages"/>
+   </widget>
+   <widget class="QMenu" name="menuCrypt">
+    <property name="title">
+     <string>&amp;Enrypt(E)</string>
+    </property>
+    <addaction name="aEncryptAES"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuDB"/>
+   <addaction name="menuModbus"/>
+   <addaction name="menuCrypt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="aExit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+   <property name="toolTip">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="aGridsingle">
+   <property name="text">
+    <string>GridSingle</string>
+   </property>
+  </action>
+  <action name="aGriddouble">
+   <property name="text">
+    <string>GridDouble</string>
+   </property>
+  </action>
+  <action name="aModbusFuncCode">
+   <property name="text">
+    <string>FuncCode</string>
+   </property>
+  </action>
+  <action name="aModbusPackages">
+   <property name="text">
+    <string>Packages</string>
+   </property>
+  </action>
+  <action name="aEncryptAES">
+   <property name="text">
+    <string>AES</string>
+   </property>
+  </action>
+  <action name="aPage">
+   <property name="text">
+    <string>Page</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
